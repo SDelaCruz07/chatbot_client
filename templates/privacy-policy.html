@@ -1,0 +1,216 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-------------------------------------- Data para google --------------------------------------------------->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Proyecto universitario UNT - Cliente - Servidor - ChatBot">
+    <meta name="author" content="NoticeBot">
+
+    <!--------------------------------------------- Titulo ----------------------------------------------------->
+    <title>NoticeBot</title>
+  
+    <!----------------------- ESTILOS ------------------------------------------------------------->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    
+    {% block css %} <!-- Estilos Estaticos -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/fontawesome-all.css' %}" rel="stylesheet">
+    <link href="{% static 'css/swiper.css' %}" rel="stylesheet">
+	<link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    {% endblock css%}
+    
+	<!---------------------- FAVICON ----------------------- -->
+    <link rel="icon" href="{% static 'images/favicon2.png' %}">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+       <!----------------- Cargando -------------------------->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!----------------- Final Cargando ------------------->
+    
+    <!---------------------------------- Navegacion --------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <!---------------------------------------- LOGO -------------------------------------->
+        <a class="navbar-brand logo-image" href="{% url 'index' %}"><img src="{% static 'images/logo2.png' %}" alt="alternative"></a>
+
+        <!---------------------------- MENU PARA MOBILES  --------------------------->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!---------------------------- FIN MENU PARA MOBILES  --------------------------->
+
+        <!---------------------------- MENU  --------------------------->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{% url 'index' %}#header">Principal <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{% url 'index' %}#pricing">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{% url 'index' %}#request">Unete</a>
+                </li>
+
+                <!---------------------------- TERMINOS Y CONDICIONES LEGALES XD -------------------------------------->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="{% url 'index' %}#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Acerca</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/terminos/"><span class="item-text">Terminos y Condiciones</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="/privacidad/"><span class="item-text">Politica de Privacidad</span></a>
+                    </div>
+                </li>
+                <!---------------------------------- FIN TERMINOS Y CONDICIONES LEGALES XD -------------------------------------->
+            </ul>
+        </div>
+        <!---------------------------- FIN MENU   --------------------------->
+    </nav>
+    <!----------------------------------FIN Navegacion --------------------------------------->
+
+
+    <!--------------------------------------- PRINCIPAL ----------------------------------->
+    <header id="header" class="ex-header">
+        <div class="container">
+            <div class="row">
+                <!-------------------------- TEXTO PRINCIPAL ------------>
+                <div class="col-md-12">
+                    <h1>Politicas de Privacidad</h1>
+                </div> 
+                <!-------------------------- FIN TEXTO PRINCIPAL ------------>
+            </div> 
+        </div> 
+    </header> 
+    <!---------------------------------------FIN PRINCIPAL ----------------------------------->
+
+
+        <!-- Breadcrumbs -->
+        <div class="ex-basic-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="breadcrumbs">
+                            <a href="{% url 'index' %}">Principal</a>
+                            <i class="fa fa-angle-double-right"></i>
+                            <span>Politicas de Privacidad</span>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+        <!-- end of breadcrumbs -->
+
+
+        <!-- Privacy Content -->
+        <div class="ex-basic-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="text-container">
+                            <h3>Datos privados que recibimos y recopilamos</h3>
+                            <p>TODAVIA FALTA POR COMPLETAR XDXDXD</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled li-space-lg indent">
+                                        <li class="media">
+                                            <i class="fas fa-square"></i>
+                                            <div class="media-body">DISENIO1</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fas fa-square"></i>
+                                            <div class="media-body">DISENIO2</div>
+                                        </li>
+                                    </ul>
+                                </div> <!-- end of col -->
+
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled li-space-lg indent">
+                                        <li class="media">
+                                            <i class="fas fa-square"></i>
+                                            <div class="media-body">DISENIO3</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fas fa-square"></i>
+                                            <div class="media-body">DISENIO4</div>
+                                        </li>
+                                    </ul>
+                                </div> <!-- end of col -->
+                            </div> <!-- end of row -->
+                        </div> <!-- end of text-container-->
+                        
+                        <div class="text-container">
+                            <h3>Cómo usamos los datos de la página</h3>
+                            <p>ESTAMOS IDEANDO LAS POLITICAS XD</p>
+                            <ol class="li-space-lg">
+                                <li>DISENIO 1</li>
+                                <li>DISENIO 2</li>
+                            </ol>
+                        </div> <!-- end of text-container -->
+
+                        <div class="text-container">
+                            <h3>Conteniedo del Cliente</h3>
+                            <p>Los servicios ayudan a nuestros clientes a tener la posibilidad de constratar la informacion propagada por internet...</p>
+                            
+                        </div> <!-- end of text container -->
+
+                    </div> <!-- end of col--> 
+                </div> <!-- end of row -->
+            </div> <!-- end of col-->
+        </div> <!-- end of row -->
+    
+    </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-2 -->
+    <!-- end of privacy content -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="index.html">Principal</a><i class="fa fa-angle-double-right"></i><span>Politicas de Privacidad</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="{% url 'index' %}">Chatbot</a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+
+    {% block js %}
+    <script src="{% static 'js/popper.min.js' %}"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="{% static 'js/jquery.min.js' %}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script> <!-- Bootstrap framework -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{% static 'js/swiper.min.js' %}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{% static 'js/validator.min.js' %}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="{% static 'js/scripts.js' %}"></script> <!-- Custom scripts -->
+    <script src="{% static 'js/controlador.js' %}"></script> <!-- Custom scripts -->
+    {% endblock js %}
+
+</body>
+</html>

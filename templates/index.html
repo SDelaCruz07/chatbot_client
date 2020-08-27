@@ -1,0 +1,357 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-------------------------------------- Data para google --------------------------------------------------->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Proyecto universitario UNT - Cliente - Servidor - ChatBot">
+    <meta name="author" content="NoticeBot">
+
+    <!--------------------------------------------- Titulo ----------------------------------------------------->
+    <title>NoticeBot</title>
+  
+    <!----------------------- ESTILOS ------------------------------------------------------------->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    
+    {% block css %} <!-- Estilos Estaticos -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/fontawesome-all.css' %}" rel="stylesheet">
+    <link href="{% static 'css/swiper.css' %}" rel="stylesheet">
+	<link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    {% endblock css%}
+    
+	<!---------------------- FAVICON ----------------------- -->
+    <link rel="icon" href="{% static 'images/favicon2.png' %}">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!----------------- Cargando -------------------------->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!----------------- Final Cargando ------------------->
+
+    <!---------------------------------- Navegacion --------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <!---------------------------------------- LOGO -------------------------------------->
+        <a class="navbar-brand logo-image" href="index.html"><img src="{% static 'images/logo2.png' %}" alt="alternative"></a>
+        
+        <!---------------------------- MENU PARA MOBILES  --------------------------->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!---------------------------- FIN MENU PARA MOBILES  --------------------------->
+
+        <!---------------------------- MENU  --------------------------->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">Principal <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#pricing">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#request">Unete</a>
+                </li>
+                <!---------------------------- TERMINOS Y CONDICIONES LEGALES XD -------------------------------------->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Acerca</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/terminos/"><span class="item-text">Terminos y Condiciones</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="/privacidad/"><span class="item-text">Politica de Privacidad</span></a>
+                    </div>
+                </li>
+                <!---------------------------------- FIN TERMINOS Y CONDICIONES LEGALES XD -------------------------------------->
+            </ul>
+        </div>
+        <!---------------------------- FIN MENU   --------------------------->
+    </nav> 
+    <!----------------------------------FIN Navegacion --------------------------------------->
+
+
+    <!--------------------------------------- PRINCIPAL ----------------------------------->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                     <!-------------------------- TEXTO PRINCIPAL ------------>
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1><span class="turquoise">Revisa Noticias</span> sin salir de WhatsApp</h1>
+                            <p class="p-large">NoticeBot, te ofrece la oportunidad de verificar una noticia, o mensaje, desde whatsApp, solo necesitas agregar a noticebot en tus contactos y LISTO!.</p>
+                        </div> 
+                    </div> 
+                    <!-------------------------- FIN TEXTO PRINCIPAL ------------>
+
+                    <!-------------------------- IMAGEN PRINCIPAL ------------>
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="{% static 'images/chat.svg' %}" alt="alternative">
+                        </div> 
+                    </div> 
+                    <!-------------------------- FIN IMAGEN PRINCIPAL ------------>
+                </div> 
+            </div> 
+        </div> 
+    </header> 
+    <!---------------------------------------FIN PRINCIPAL ----------------------------------->
+
+
+  <!---------------------------------------PRECIOS ----------------------------------->
+    <div id="pricing" class="cards-2">
+        <div class="container">
+            <!---------------------- CABECERA DE PRECIOS --------------------------->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Opciones de Precio</h2>
+                    <p class="p-heading p-large">Descuida el primer mes es GRATUITO, pero hemos preparado planes de precios para todos los presupuestos.</p>
+                </div> 
+            </div> 
+            <!---------------------- FIN CABECERA DE PRECIOS --------------------------->
+
+            <!---------------------- OPCIONES DE PRECIO --------------------------->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!---------------------- OPCION MENSUAL --------------------------->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">MENSUAL</div>
+                            <hr class="cell-divide-hr">
+                            <div class="price">
+                                <span class="currency">S/</span><span class="value">1</span>
+                            </div>
+                            <hr class="cell-divide-hr">
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-check"></i><div class="media-body">En cuotas tan pequeñas que ni lo sentiras</div>
+                                </li>
+                            </ul>
+                            <!-- 
+                            <div class="button-wrapper">
+                                <a class="btn-solid-reg popup-with-move-anim" href="#modal1">REQUEST</a>
+                            </div> -->
+                        </div>
+                    </div> 
+                    <!---------------------- FIN OPCION MENSUAL --------------------------->
+
+                    <!---------------------- OPCION ANUAL --------------------------->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">ANUAL</div>
+                            <hr class="cell-divide-hr">
+                            <div class="price">
+                                <span class="currency">S/</span><span class="value">10</span>
+                            </div>
+                            <hr class="cell-divide-hr">
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-check"></i><div class="media-body">Te ahorras los pagos mensuales y tienes el servicio por un año</div>
+                                </li>
+                            </ul>
+                            <!-- 
+                            <div class="button-wrapper">
+                                <a class="btn-solid-reg popup-with-move-anim" href="#modal1">REQUEST</a>
+                            </div> -->
+                        </div>
+                    </div> 
+                    <!---------------------- FIN OPCION ANUAL --------------------------->
+
+                    <!---------------------- OPCION TRES AÑOS --------------------------->
+                    <div class="card">
+                        <div class="label">
+                            <p class="best-value">Mejor Precio</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">TRES AÑOS</div>
+                            <hr class="cell-divide-hr">
+                            <div class="price">
+                                <span class="currency">S/</span><span class="value">22</span>
+                            </div>
+                            <hr class="cell-divide-hr">
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-check"></i><div class="media-body">Para los adinerados que pueden darse ciertos lujos ;)</div>
+                                </li>
+                            </ul>
+                           <!-- 
+                            <div class="button-wrapper">
+                                <a class="btn-solid-reg popup-with-move-anim" href="#modal1">REQUEST</a>
+                            </div> -->
+                        </div>
+                    </div> 
+                    <!---------------------- FIN OPCION TRES AÑOS --------------------------->
+
+                </div>
+            </div> 
+            <!---------------------- FIN OPCIONES DE PRECIO --------------------------->
+        </div>
+    </div> 
+   <!---------------------------------------FIN PRECIOS ----------------------------------->
+
+   <!--------------------------------------- AFILIACION ----------------------------------->
+    <div id="request" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                	<div class="text-container">
+                        <h2>Unete!!!</h2>
+                        <p>EL PRIMER MES ES TOTALMENTE GRATIS</p>
+
+                         <!---------------------------------------INICIO FORMULARIO ----------------------------------->
+                        <form  id="form_crear" action="/user/" method="POST" >
+                            {% csrf_token %}
+                            <!--  USUARIO -->
+						    <label for="validationServer01">Nombre Usuario</label>
+						    <input type="text" class="form-control" id="inputUser" name = "inputUser" value="" >
+                            <!-- FIN USUARIO -->
+
+                            <!-- TELEFONO -->
+					        <label for="validationServer02">Telefono</label>
+						    <input type="text" class="form-control is-valid" id="inputPhone" name="inputPhone" value=""  >
+						    <div class="valid-feedback"> Solo ingresar numeros de nueve digitos </div>
+                            <!-- FIN TELEFONO -->
+
+                            <!-- ACEPTAR TERMINOS -->
+						    <div class="form-group">
+						        <div class="form-check">
+						            <input class="form-check-input is-invalid" type="checkbox"  id="inputCheck"  aria-describedby="invalidCheck3Feedback" >
+						            <label class="form-check-label" for="invalidCheck3">
+						            Aceptar terminos y condiciones
+						            </label>
+						        </div>
+                            </div>
+                            <!-- FIN ACEPTAR TERMINOS -->
+
+						  <button type="button" class="btn btn-info"  name="Unirse" onclick="Verificar()">Unirse</button>
+						</form>
+                        <!---------------------------------------FIN FORMULARIO ----------------------------------->
+                            
+                	</div> 
+                </div> 
+
+                <!-- IMAGEN DE FORM -->
+        		<div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'images/details-1-office-worker.svg' %}" alt="alternative">
+                    </div> 
+                </div> 
+                <!-- FIN IMAGEN DE FORM -->
+
+        	</div> 
+   		</div> 
+    </div> 
+    <!--------------------------------------- FIN AFILIACION ----------------------------------->
+
+
+
+
+<!-------------------------------- MODALS ------------------------------------------------------------>
+
+
+    <!-------------------------------- MODAL DE ALERTA  ---------------------->
+    <div class="modal fade" id="alertar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">ALERTA</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <!-- CONTENIDO EDITABLE POR JAVASCRIPT -->
+            <div class="modal-body">
+            <p id="contenido"></p>
+            </div>
+            <!-- FIN CONTENIDO EDITABLE POR JAVASCRIPT -->
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">CERRAR</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--------------------- FIN MODAL ALERTA ----------------------------------->
+
+        <!-------------------------------- MODAL DE ACEPTACION  ---------------------->
+        <div class="modal fade right" id="logrado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"  aria-hidden="true">
+            <div class="modal-dialog modal-full-height modal-top" role="document">
+            <!--Content-->
+                <div class="modal-content">
+                <!--Header-->
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Se realizo el registro de manera correcta</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <!--Body-->
+                    <div class="modal-body">
+                        <p>Para poder tener acceso al bot, solo debes realizar los siguientes pasos </p>
+                        <ul class="list-group z-depth-0">
+                            <li class="list-group-item justify-content-between">
+                                <span class="badge badge-primary badge-pill">1</span>
+                                Ingresar al whatssap
+                            </li>
+                            <li class="list-group-item justify-content-between">
+                                <span class="badge badge-primary badge-pill">2</span>
+                                Agregar el siguiente contacto: +1 415 5238 886
+                            </li>
+                            <li class="list-group-item justify-content-between">
+                                <span class="badge badge-primary badge-pill">3</span>
+                                Buscarlo en contactos agregados 
+                            </li>
+                            <li class="list-group-item justify-content-between">
+                                <span class="badge badge-primary badge-pill">4</span>
+                                Escribirle el siguiente mensaje: join more-attempt
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-info btn-block" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+      </div>
+      <!--------------------- FIN MODAL ACEPTACION ----------------------------------->
+
+    <!-------------------------------- FIN MODALS ------------------------------------------------------------>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="{% url 'index' %}">Chatbot</a> - Todos los derechos reservados</p>
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    {% block js %}
+    <script src="{% static 'js/popper.min.js' %}"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="{% static 'js/jquery.min.js' %}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script> <!-- Bootstrap framework -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{% static 'js/swiper.min.js' %}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{% static 'js/validator.min.js' %}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="{% static 'js/scripts.js' %}"></script> <!-- Custom scripts -->
+    <script src="{% static 'js/controlador.js' %}"></script> <!-- Custom scripts -->
+    {% endblock js %}
+
+</body>
+</html>
