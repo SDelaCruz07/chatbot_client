@@ -18,6 +18,8 @@ from django.urls import path
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from ChatBot.views import saludo,insertar,terminos,privacidad
 
+from django.config import settings
+from django.config.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls ),
@@ -25,6 +27,6 @@ urlpatterns = [
     path('user/',insertar),    
     path('terminos/',terminos),    
     path('privacidad/',privacidad),    
-]
+] + static(settings.STATIC_URL, document_root = settings.STATIC_ROOOT)
 
 urlpatterns ==staticfiles_urlpatterns()
